@@ -1,0 +1,133 @@
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Lexend Deca', sans-serif; 
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+section{
+    background-color: hsl(244, 38%, 16%);
+    width: 80%;
+    height: 320px;
+    display: flex;
+    margin: 100px auto;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+}
+
+aside{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.state p {
+    margin-top: -10px;
+}
+
+.img-container{
+    width: 50%;
+    background-color: hsl(277, 64%, 61%);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em ;
+}
+
+.img-container img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;    
+    mix-blend-mode: overlay;
+   border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em ;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+.container{
+    width: 50%;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.content{
+ color:  hsla(0, 0%, 100%, 0.75);
+ line-height: 2em;
+}
+
+h4{
+    color: hsla(0, 0%, 100%, 0.75) ;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media (max-width: 800px){
+    section{
+        flex-direction: column;
+        margin:300px auto;
+        flex-flow: column-reverse;
+        background-color: hsl(244, 38%, 16%);
+        height: 650px;
+        width: 80%;
+        padding-bottom: 1em;
+    }
+    .container, .img-container{
+        margin: 0 auto;
+    }
+
+    .img-container, .img-container img{
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 1em;
+    }
+
+    .img-container{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .container{
+        width: 80%;
+        text-align: center;
+        padding: 0 2em;
+        text-align: center;
+        
+    }
+
+    aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0;
+        padding-bottom: 10em;
+    }
+}
+
+@media(max-width: 575px){
+    aside{
+        flex-direction: column;
+    }
+}
